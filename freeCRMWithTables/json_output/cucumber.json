@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-25T05:08:05.340Z",
+        "line": 3,
+        "name": "Free CRM login and create new contact test scenario",
+        "description": "",
+        "id": "free-crm-login-and-create-contact-feature;free-crm-login-and-create-new-contact-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7462071400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is present on login page",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49825000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "title of login page is Free CRM",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.title_of_login_page_is_free_crm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3195133300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters username and password",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_enters_username_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jayeshgaurav",
+                  "Gaurav@123"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1431099700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23001000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//frame[@name\u003d\u0027mainpanel\u0027]\"}\n  (Session info: chrome\u003d96.0.4664.45)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027AH4000691LT\u0027, ip: \u0027192.168.0.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\\Users\\JAYESH~1.KUL\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50533}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2d560a1fa95ace7751b3ddf2829b97a\n*** Element info: {Using\u003dxpath, value\u003d//frame[@name\u003d\u0027mainpanel\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefinition.LoginContactStepDefinition.user_moves_to_contacts_button(LoginContactStepDefinition.java:92)\r\n\tat ✽.user moves to contacts button(file:///C:/Users/Jayesh.Kulkarni/eclipse-workspace/freeCRMWithTables/src/main/java/features/LoginContacts.feature:13)\r\n",
+              "duration": 300893400,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "user moves to contacts button",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_moves_to_contacts_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user clicks on new contact link",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_clicks_on_new_contact_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user enters  firstname and lastname and position",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_enters_firstname_and_lastname_and_position(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Rahul",
+                  "Dravid",
+                  "coach"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.user_clicks_on_save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 950300,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "verify contact created",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.verify_contact_created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinition.LoginContactStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "free CRM Login and create contact feature",
+    "description": "",
+    "id": "free-crm-login-and-create-contact-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/LoginContacts.feature",
+    "tags": []
+  }
+]

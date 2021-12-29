@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.72">
+    <testcase classname="free CRM Login and create contact feature" name="Free CRM loginb and create new contact test scenario" time="27.425">
+        <system-out><![CDATA[Given user is present on login page.........................................passed
+Then title of login page is Free CRM........................................passed
+Then user enters "jayeshgaurav" and "Gaurav@123"............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then user moves to contacts button..........................................passed
+Then user clicks on new contact link........................................passed
+Then user enters contact details "David" and "Warner" and "Captain".........passed
+Then user clicks on save button.............................................passed
+Then verify contact created.................................................passed
+Then close the browser......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,175 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-23T11:59:24.227Z",
+        "line": 3,
+        "name": "telecom project and add customers test scenario",
+        "description": "",
+        "id": "guru99-login-and-create-telecom-project;telecom-project-and-add-customers-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6886337300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is present on login page",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20940700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.title_of_login_page_is_Free_CRM()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4598654200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters userID and password",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_enters_userID_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userID",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "mngr376749",
+                  "vavAqUp"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2090278700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16830800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2741896300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on telecom project",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_clicks_on_telecom_project()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4481814500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on add customer",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_clicks_on_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 654000500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user selects background check as done",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_selects_background_check_as_done()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36181597500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters billing address",
+            "match": {
+              "location": "stepDefinition.LoginTelecomStepDefinition.user_enters_billing_address(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "email",
+                  "address",
+                  "mobilenumber"
+                ]
+              },
+              {
+                "cells": [
+                  "gaurav",
+                  "dhondge",
+                  "gauravdhondge@gmail.com",
+                  "Nashik",
+                  "8007975732"
+                ]
+              },
+              {
+                "cells": [
+                  "jayesh",
+                  "kulkarni",
+                  "kulkarnijayesh11@gmail.com",
+                  "Mumbai",
+                  "8830407067"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Guru99 login and create telecom project",
+    "description": "",
+    "id": "guru99-login-and-create-telecom-project",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/LoginTelecomAddCustomers.feature",
+    "tags": []
+  }
+]

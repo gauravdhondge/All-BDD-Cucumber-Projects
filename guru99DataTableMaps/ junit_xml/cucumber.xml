@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="67.195">
+    <testcase classname="Guru99 login and create telecom project" name="telecom project and add tariff plan test scenario" time="66.849">
+        <system-out><![CDATA[Given user is already present on login page.................................passed
+And title of loginpage is GTPL Bank Home Page...............................passed
+When user enter userID and password.........................................passed
+And user click on login button..............................................passed
+Then user is on homepage....................................................passed
+And user click on telecom project...........................................passed
+And user clicks on add tariff plan..........................................passed
+When user enters add tariff plan details and clicks on submit button........passed
+Then user again comes to telecom projects homepage by clicking on telecom project.passed
+]]></system-out>
+    </testcase>
+</testsuite>

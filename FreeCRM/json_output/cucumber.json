@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-08T09:20:10.702Z",
+        "line": 6,
+        "name": "free CRM login feature test",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-feature-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10076316600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is already present on loginpage",
+            "match": {
+              "location": "stepDefinition.MapsStepDefinition.user_already_present_on_loginpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24941400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "title of loginpage",
+            "match": {
+              "location": "stepDefinition.MapsStepDefinition.title_of_loginpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2951613700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters username and password",
+            "match": {
+              "location": "stepDefinition.MapsStepDefinition.user_enters_username_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "gauravjayesh",
+                  "Jayesh@123"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9214123600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.MapsStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37899600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "title of mainpage",
+            "match": {
+              "location": "stepDefinition.MapsStepDefinition.title_of_mainpage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "free CRM login feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/login.feature",
+    "tags": []
+  }
+]
