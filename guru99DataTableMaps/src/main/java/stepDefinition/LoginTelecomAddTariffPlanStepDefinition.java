@@ -22,7 +22,7 @@ public class LoginTelecomAddTariffPlanStepDefinition {
 
 {
 	    
- System.setProperty("webdriver.chrome.driver","C:\\Users\\Jayesh.Kulkarni\\Downloads\\chromedriver.exe");
+ System.setProperty("webdriver.chrome.driver","C:\\Users\\Jayesh.Kulkarni\\Downloads\\chromedriver_win32\\chromedriver.exe");
  driver = new ChromeDriver();
  driver.manage().window().maximize();
  driver.get("http://demo.guru99.com/V1/index.php");
