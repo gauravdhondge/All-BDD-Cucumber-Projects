@@ -18,7 +18,7 @@ public WebDriver driver;
 		
 		System.out.println("The browser name is : "+browserName );
 		
-		if(browserName.equals("Chrome")) {
+		if(browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			threadLocalDriver.set(new ChromeDriver());
 		}

@@ -27,18 +27,10 @@ public class DeleteDataDriven {
 	baseURI = "http://localhost:3000/";
 	
 	when()
-	.delete("/Subjects/" + id)
+	.delete("/users/" + id)
 	.then()
 	.statusCode(200);
 	
 	
-}
-
-
-
-
-
-
-
-
+  }
 }

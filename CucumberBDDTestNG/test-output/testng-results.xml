@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-01T17:09:45 IST" name="Default suite" finished-at="2022-02-01T17:10:11 IST" duration-ms="25783">
+  <suite started-at="2022-02-08T11:09:29 IST" name="Default suite" finished-at="2022-02-08T11:09:52 IST" duration-ms="23321">
     <groups>
       <group name="cucumber">
         <method signature="BaseDriver.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f217633]" name="scenario" class="basePackage.BaseDriver"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-01T17:09:45 IST" name="Default test" finished-at="2022-02-01T17:10:11 IST" duration-ms="25783">
+    <test started-at="2022-02-08T11:09:29 IST" name="Default test" finished-at="2022-02-08T11:09:52 IST" duration-ms="23321">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@2f217633]" started-at="2022-02-01T17:09:45 IST" name="setUpClass" finished-at="2022-02-01T17:09:46 IST" duration-ms="1000" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@2f217633]" started-at="2022-02-08T11:09:29 IST" name="setUpClass" finished-at="2022-02-08T11:09:31 IST" duration-ms="1849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f217633]" started-at="2022-02-01T17:09:46 IST" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-01T17:10:11 IST" duration-ms="24466" status="FAIL">
+        <test-method signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f217633]" started-at="2022-02-08T11:09:31 IST" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-08T11:09:52 IST" duration-ms="21237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,53 +27,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='btnLogin']"}
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AH4000691LT', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\JAYESH~1.KUL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3449955bff25f7d748d4a0b2732ac4cb
-*** Element info: {Using=xpath, value=//input[@name='btnLogin']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='btnLogin']"}
-  (Session info: chrome=97.0.4692.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'AH4000691LT', ip: '192.168.0.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\JAYESH~1.KUL\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3449955bff25f7d748d4a0b2732ac4cb
-*** Element info: {Using=xpath, value=//input[@name='btnLogin']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.LoginPage.ClickLoginButton(LoginPage.java:45)
-at stepDefinition.LoginStepDefinition.user_clicks_on_login_button(LoginStepDefinition.java:79)
-at ✽.user clicks on login button(file:///C:/Users/Jayesh.Kulkarni/eclipse-workspace/CucumberBDDTestNG/src/test/resources/features/Login.feature:12)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f217633]" started-at="2022-02-01T17:10:11 IST" name="tearDownClass" finished-at="2022-02-01T17:10:11 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f217633]" started-at="2022-02-08T11:09:52 IST" name="tearDownClass" finished-at="2022-02-08T11:09:52 IST" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

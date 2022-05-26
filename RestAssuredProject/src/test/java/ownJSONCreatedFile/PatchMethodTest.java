@@ -29,7 +29,7 @@ public class PatchMethodTest {
 		.header("ContentType","Application/JSON")
 		.body(request.toJSONString())
 		.when()
-		.patch("/Subjects/5")
+		.patch("/Subjects/6")
 		.then()
 		.statusCode(200)
 		.log().all();

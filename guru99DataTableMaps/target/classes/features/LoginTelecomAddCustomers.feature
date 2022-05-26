@@ -1,12 +1,12 @@
 Feature: Guru99 login and create telecom project
 
 Scenario: telecom project and add customers test scenario
-
+ 
 Given user is present on login page
 And title of login page is GTPL Bank Home Page
 When user enters userID and password 
 |userID    | password  |
-|mngr376749| vavAqUp   |
+|mngr385212| abumUzE   |
 And user clicks on login button
 Then user is on home page
 And user clicks on telecom project

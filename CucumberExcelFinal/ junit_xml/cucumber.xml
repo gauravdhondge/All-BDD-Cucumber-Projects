@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.911">
+    <testcase classname="NopCommerce login feature" name="NopCommerce login test scenario" time="0.151">
+        <failure message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;browserName&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given user is present on loginpage..........................................skipped
+And title of loginpage is Your store Login..................................skipped
+When user enters email and password from given sheetname "DetailsOfLogin" and rownumber 0.skipped
+And user clicks on login button.............................................skipped
+Then user is on home page...................................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "browserName" is null
+	at basePackage.DriverFactory.initiateDriver(DriverFactory.java:21)
+	at runner.ApplicationHooks.launchBrowser(ApplicationHooks.java:25)
+]]></failure>
+    </testcase>
+</testsuite>

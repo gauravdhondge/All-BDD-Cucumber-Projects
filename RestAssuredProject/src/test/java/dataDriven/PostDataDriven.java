@@ -22,8 +22,11 @@ public class PostDataDriven {
 		
 		return new Object[][] {
 		
-			{ 7,"Tosca"},
-			{ 8,"Junit"}
+//			{ 7,"Tosca"},
+//			{ 8,"Junit"}
+			
+			{"Mangesh","Dhondge",5},
+			{"Madhuri","Dhondge",6}
 					
 		};
 		
@@ -32,12 +35,16 @@ public class PostDataDriven {
 	 
 	
 	@Test(dataProvider = "DataForPost")
-	public void post_test(int id,String Name) {
+	public void post_test(String FirstName,String LastName,int SubjectID) {
 	
 		JSONObject request = new JSONObject();
 		        
-		request.put("id",id);
-		request.put("Name",Name);
+//		request.put("id",id);
+//		request.put("Name",Name);
+		
+		request.put("FirstName",FirstName);	
+		request.put("LastName",LastName);
+		request.put("SubjectID",SubjectID);
 		
 		
         baseURI = "http://localhost:3000/";
@@ -48,7 +55,7 @@ public class PostDataDriven {
         .accept(ContentType.JSON)
         .body(request.toJSONString())
         .when()
-        .post("http://localhost:3000/Subjects")
+        .post("http://localhost:3000/users")
         .then()
         .statusCode(201)
         .log().all();

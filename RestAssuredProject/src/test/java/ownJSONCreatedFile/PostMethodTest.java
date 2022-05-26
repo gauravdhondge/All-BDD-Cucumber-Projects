@@ -15,12 +15,12 @@ public class PostMethodTest {
 		
 		JSONObject request = new JSONObject();
 		
-//        request.put("FirstName","Madhuri");
-//        request.put("LastName","Dhondge");
-//        request.put("SubjectID",5);
+        request.put("FirstName","Madhuri");
+        request.put("LastName","Dhondge");
+        request.put("SubjectID",5);
         
-		request.put("id",4);
-		request.put("Name","Cucumber");
+//		request.put("id",4);
+//		request.put("Name","Cucumber");
 		
 		
         baseURI = "http://localhost:3000/";
@@ -31,7 +31,7 @@ public class PostMethodTest {
         .accept(ContentType.JSON)
         .body(request.toJSONString())
         .when()
-        .post("http://localhost:3000/Subjects")
+        .post("http://localhost:3000/users")
         .then()
         .statusCode(201)
         .log().all();

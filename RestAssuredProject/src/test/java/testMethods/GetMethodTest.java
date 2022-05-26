@@ -28,6 +28,8 @@ public class GetMethodTest {
 //		Assert.assertEquals(statuscode,200);
 //
 //	}
+	
+	
 
 //	@Test
 //	public void test2() {
@@ -38,6 +40,7 @@ public class GetMethodTest {
 //		.then()
 //		.statusCode(200) 
 //		.body("data.id[0]", equalTo(7));
+//	//	.log().all();
 //	
 //	}
 
@@ -45,10 +48,12 @@ public class GetMethodTest {
 
 	public void test3() {
 
-		given().get("https://reqres.in/api/users?page=2").then().statusCode(200)
-//	.log().all();...........to get all the data 
-				.body("data.first_name", hasItems("Michael", "Tobias", "Lindsay"));
-
+	given().get("https://reqres.in/api/users?page=2").then().statusCode(200)
+////	.log().all();...........to get all the data 
+//	.body("data.first_name", hasItems("Michael", "Tobias", "Lindsay"));
+//	.body("data.last_name", hasItems("Michael", "Tobias", "Lindsay"));
+	.body("data.id", hasItems(7,8,9));
+	
 	}
 
 }

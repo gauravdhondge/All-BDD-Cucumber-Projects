@@ -9,8 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions
 (
 		
-//features =  "C:\\Users\\Jayesh.Kulkarni\\eclipse-workspace\\guru99DataTableMaps\\src\\main\\java\\features\\LoginTelecomAddCustomers.feature",
-features = "C:\\Users\\Jayesh.Kulkarni\\eclipse-workspace\\guru99DataTableMaps\\src\\main\\java\\features\\LoginTelecomAddTariffPlan.feature",
+features =  "C:\\Users\\Jayesh.Kulkarni\\eclipse-workspace\\guru99DataTableMaps\\src\\main\\java\\features\\LoginTelecomAddCustomers.feature",
+//features = "C:\\Users\\Jayesh.Kulkarni\\eclipse-workspace\\guru99DataTableMaps\\src\\main\\java\\features\\LoginTelecomAddTariffPlan.feature",
 glue = {"stepDefinition"},
 monochrome = true,
 //plugin = {"pretty", "html: test-output"}

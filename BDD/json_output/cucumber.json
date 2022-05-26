@@ -1,0 +1,285 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-14T10:30:58.374Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2912992200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "guru99 login test scenario",
+        "description": "",
+        "id": "guru99-login-feature;guru99-login-test-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1421200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.screenShot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5084306000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is present on login page",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23093800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.title_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6125206800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters userID and Password from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddCustomerDetails\"",
+                  "offset": 53
+                },
+                {
+                  "val": "0",
+                  "offset": 96
+                }
+              ],
+              "location": "stepDefinition.LoginStepDefinition.user_enters_user_id_and_password_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4229612500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57429200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12817274700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on telecom project and selects add customer",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_clicks_on_telecom_project_and_selects_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25050497500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user selects background check as done and enters billing address from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddCustomerDetails\"",
+                  "offset": 86
+                },
+                {
+                  "val": "0",
+                  "offset": 129
+                }
+              ],
+              "location": "stepDefinition.LoginStepDefinition.user_selects_background_check_as_done_and_enters_billing_address_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-14T10:31:54.731Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1412346200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "guru99 login test scenario",
+        "description": "",
+        "id": "guru99-login-feature;guru99-login-test-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d98.0.4758.82)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027AH4000691LT\u0027, ip: \u0027192.168.0.100\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\\Users\\JAYESH~1.KUL\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b326037669a475f704fd29b3d769da2c\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat runner.ApplicationHooks.screenShot(ApplicationHooks.java:39)\r\n",
+              "duration": 12182111500,
+              "status": "failed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.screenShot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5228424200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is present on login page",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27918600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.title_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d98.0.4758.82)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027AH4000691LT\u0027, ip: \u0027192.168.0.100\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\\Users\\JAYESH~1.KUL\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b326037669a475f704fd29b3d769da2c\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027password\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy24.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.EnterUserID_and_Password(LoginPage.java:36)\r\n\tat stepDefinition.LoginStepDefinition.user_enters_user_id_and_password_from_given_sheetname_and_rownumber(LoginStepDefinition.java:70)\r\n\tat ✽.user enters userID and Password from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 1(file:///C:/Users/Jayesh.Kulkarni/eclipse-workspace/BDD/src/test/resources/features/Login.feature:9)\r\n",
+              "duration": 15234189900,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user enters userID and Password from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddCustomerDetails\"",
+                  "offset": 53
+                },
+                {
+                  "val": "1",
+                  "offset": 96
+                }
+              ],
+              "location": "stepDefinition.LoginStepDefinition.user_enters_user_id_and_password_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user clicks on telecom project and selects add customer",
+            "match": {
+              "location": "stepDefinition.LoginStepDefinition.user_clicks_on_telecom_project_and_selects_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user selects background check as done and enters billing address from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddCustomerDetails\"",
+                  "offset": 86
+                },
+                {
+                  "val": "1",
+                  "offset": 129
+                }
+              ],
+              "location": "stepDefinition.LoginStepDefinition.user_selects_background_check_as_done_and_enters_billing_address_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "guru99 login feature",
+    "description": "",
+    "id": "guru99-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

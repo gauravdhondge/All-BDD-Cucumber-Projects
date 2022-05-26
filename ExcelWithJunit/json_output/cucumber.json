@@ -1,0 +1,520 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-16T04:39:04.580Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4843676200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "guru99 login and Add customer test scenario",
+        "description": "",
+        "id": "guru99-login-feature;guru99-login-and-add-customer-test-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.screenShot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4788812800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is present on login page",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23663000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.title_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user enters userID and Password from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 0",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user clicks on telecom project and selects add customer",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_clicks_on_telecom_project_and_selects_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user selects background check as done and enters billing address from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 0",
+            "match": {},
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-16T04:39:14.455Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2004189900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "guru99 login and Add customer test scenario",
+        "description": "",
+        "id": "guru99-login-feature;guru99-login-and-add-customer-test-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.screenShot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4214526200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is present on login page",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13369400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.title_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user enters userID and Password from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 1",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 934300,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user clicks on telecom project and selects add customer",
+            "match": {
+              "location": "stepDefinition.LoginAddCustomerStepDefinition.user_clicks_on_telecom_project_and_selects_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user selects background check as done and enters billing address from given sheetname \"LoginAndAddCustomerDetails\" and rownumber 1",
+            "match": {},
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-16T04:39:20.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1748850000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "guru99 login and Add tariff plan test scenario",
+        "description": "",
+        "id": "guru99-login-feature;guru99-login-and-add-tariff-plan-test-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.screenShot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4399479800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user is already present on login page",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17757100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.title_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5791579400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user enters username and Password from given sheetname \"LoginAndAddTariffPlanDetails\" and rownumber 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddTariffPlanDetails\"",
+                  "offset": 55
+                },
+                {
+                  "val": "0",
+                  "offset": 100
+                }
+              ],
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_enters_usernme_and_password_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3566293900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "then user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55203700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user comes on home page",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12633898200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks on telecom project and selects add tariff plan",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_clicks_on_telecom_project_and_selects_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28431537600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user enters add tariff plan details from given sheetname \"LoginAndAddTariffPlanDetails\" and rownumber 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddTariffPlanDetails\"",
+                  "offset": 57
+                },
+                {
+                  "val": "0",
+                  "offset": 102
+                }
+              ],
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_enters_Add_Tariff_Plan_details_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-16T04:40:17.373Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1823203900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "guru99 login and Add tariff plan test scenario",
+        "description": "",
+        "id": "guru99-login-feature;guru99-login-and-add-tariff-plan-test-scenario;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.ApplicationHooks.screenShot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4841307800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user is already present on login page",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_is_present_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27917100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the title of login page is GTPL Bank Home Page",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.title_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4615635300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user enters username and Password from given sheetname \"LoginAndAddTariffPlanDetails\" and rownumber 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddTariffPlanDetails\"",
+                  "offset": 55
+                },
+                {
+                  "val": "1",
+                  "offset": 100
+                }
+              ],
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_enters_usernme_and_password_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4297936600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "then user clicks on login button",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44415000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user comes on home page",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12684012300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user clicks on telecom project and selects add tariff plan",
+            "match": {
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_clicks_on_telecom_project_and_selects_add_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27650775800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user enters add tariff plan details from given sheetname \"LoginAndAddTariffPlanDetails\" and rownumber 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginAndAddTariffPlanDetails\"",
+                  "offset": 57
+                },
+                {
+                  "val": "1",
+                  "offset": 102
+                }
+              ],
+              "location": "stepDefinition.LoginAddTariffPlanStepDefinition.user_enters_Add_Tariff_Plan_details_from_given_sheetname_and_rownumber(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "guru99 login feature",
+    "description": "",
+    "id": "guru99-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
