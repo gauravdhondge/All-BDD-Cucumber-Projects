@@ -38,17 +38,17 @@ public class FaceBook {
 		
 //		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert");
 		
-		driver.get("https://www.w3schools.com/");
+//		driver.get("https://www.w3schools.com/");
 		
-//		driver.get("https://www.facebook.com");
+		driver.get("https://www.facebook.com");
 		
 		
-//		Thread.sleep(3000);
-//		
-//		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
-//		CreateNewAcc.click();
-//	
-//		Thread.sleep(3000);
+		Thread.sleep(3000);
+		
+		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
+		CreateNewAcc.click();
+	
+		Thread.sleep(3000);
 //		
 //		
 //		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -123,7 +123,7 @@ public class FaceBook {
 //	Alert alt =	driver.switchTo().alert();
 //	alt.accept();	
 		
-		
+	
 		
 		
 		
