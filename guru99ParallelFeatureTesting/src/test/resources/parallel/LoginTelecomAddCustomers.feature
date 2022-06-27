@@ -6,7 +6,7 @@ Given user is present on login page
 And title of login page is GTPL Bank Home Page
 When user enters userID and password 
 |userID    | password  |
-|mngr385212| abumUzE   |
+|mngr413275| azUjuby   |
 And user clicks on login button
 Then user is on home page
 And user clicks on telecom project

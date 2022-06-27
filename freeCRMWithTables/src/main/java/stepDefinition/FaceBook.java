@@ -2,6 +2,8 @@ package stepDefinition;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -42,13 +44,87 @@ public class FaceBook {
 		
 		driver.get("https://www.facebook.com");
 		
-		
 		Thread.sleep(3000);
+		
+//		List<WebElement> tryit = driver.findElements(By.xpath("//a[text()='Try it Yourself']"));
+//		
+//		tryit.get(0).click();
+//		
+//		System.out.println("clicked on tryit button");
+//		
+//		Thread.sleep(3000);
+//		
+//		ArrayList<String> addr = new ArrayList<String>(driver.getWindowHandles());
+//		
+//		driver.switchTo().window(addr.get(1));
+//		
+//		System.out.println("switched to childbrowser");
+//		
+//		Thread.sleep(3000);
+//		
+//		WebElement website  = driver.findElement(By.xpath("//a[@id='getwebsitebtn']"));
+//        website.click();
+//        
+//        System.out.println("clicked on website button");
+//		
+		
+//		List<WebElement> links = driver.findElements(By.tagName("a"));
+//		
+//		int a = links.size();
+//		System.out.println("no.of links is:"+a);
+//		
+//	for(WebElement e: links) {
+//		
+//		System.out.println(e.getText());
+//	}
+		
+		
+		
+//		driver.get("https://www.w3schools.com/");
+//		
+//		
+//		List<WebElement> tryit = driver.findElements(By.xpath("//a[text()='Try it Yourself']"));
+//		
+//		int a = tryit.size();
+//		System.out.println(a);
+//		
+//		for(int i=0;i<=4;i++) {
+//			
+//			tryit.get(i).click();
+//		}
+//		
+//ArrayList<String> addr = new ArrayList<String>(driver.getWindowHandles());
+//
+//driver.switchTo().window(addr.get(1));
+//
+//System.out.println("Switched to childbrowser");
+
+
+		
+		
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		
 		
 		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
 		CreateNewAcc.click();
 	
 		Thread.sleep(3000);
+
+//		
+//		WebElement months = driver.findElement(By.xpath("//select[@id='month']"));
+//
+//		Select s = new Select(months);
+//		
+//	List <WebElement> monthsdata =	s.getOptions();
+//	
+//	for(WebElement e : monthsdata) {
+//		
+//		System.out.println(e.getText());
+//	}
+		
+	
+	
 //		
 //		
 //		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -67,7 +143,7 @@ public class FaceBook {
 		
 		
 		
-		
+	
 		
 	//	Thread.sleep(3000);
 //	
@@ -124,7 +200,7 @@ public class FaceBook {
 //	alt.accept();	
 		
 	
-		
+	
 		
 		
 		

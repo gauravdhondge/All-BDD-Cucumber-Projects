@@ -10,6 +10,20 @@ public class Help {
 	
 	
 	
+	
+	
+public static final void demo(int a) {
+		
+		System.out.println("jayeshgaurav");
+		
+}
+
+public final void demo(char b) {
+	
+	System.out.println("gaurav");
+}	
+	
+	
 	public static void main(String[] args) {
 		
 		
@@ -20,11 +34,22 @@ public class Help {
 		System.out.println(x.c);
 		System.out.println(x.d);
 		
+		Help.demo(1);
+		
+		
+		x.demo('&');
 		
 		
 	}
 	
-	
+	public static void main(int a) {
+		
+		Help.demo(a);
+		
+		System.out.println(Help.a);
+		System.out.println(Help.b);
+		
+	}
 	
 	
 	

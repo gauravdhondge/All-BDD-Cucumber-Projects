@@ -20,6 +20,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.AddCustomerPage;
 import pages.LoginPage;
 
 public class LoginStepDefinition {
@@ -29,6 +30,8 @@ public class LoginStepDefinition {
 	private WebDriver driver;
 	private String PageTitle;
 	private String HomePageTitle;
+	private AddCustomerPage addcustomerpage = new AddCustomerPage(DriverFactory.getDriver());
+	
 
 	@Given("^user is present on login page$")
 	public void user_is_present_on_login_page()
@@ -90,5 +93,46 @@ public class LoginStepDefinition {
 		System.out.println("The HomePage title is displayed as "+ HomePageTitle);
 	
 	}
+	
+	
+	@Then("^user clicks on Telecom Project$")
+	public void user_clicks_on_telecom_project() throws InterruptedException
+
+	{
+
+		addcustomerpage.ClickOnTelecomProject();
+		
+	}
+	
+	
+	@Then("^user clicks on close button$")
+	public void user_clicks_on_Close_Button() throws InterruptedException
+
+	{
+
+		addcustomerpage.ClickOnCloseButton();
+		
+	}
+	
+	
+	
+	
+	@Then("^user clicks on add customer button$")
+	public void user_clicks_on_Add_Customer() throws InterruptedException
+
+	{
+
+		addcustomerpage.ClickOnAddCustomerButton();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
   }
