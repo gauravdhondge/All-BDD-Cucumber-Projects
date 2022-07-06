@@ -5,40 +5,23 @@ import java.util.Arrays;
 public class Programs {
 
 	
+	
+	
+	
 	public static void main(String[] args) {
 	
-System.out.println("print array as it is");		
+		String a ="123jayesh";
 		
-int a[] = {1,44,65,34,12};
-
-for(int i=0;i<=a.length-1;i++) {
+	StringBuilder sb = new StringBuilder(a);
+	sb.delete(0, 3);
+	System.out.println(sb);
+	sb.reverse();
+	System.out.println(sb);
 	
-	System.out.println(a[i]);
-}
-
-System.out.println("print array in ascending order");
-
-Arrays.sort(a);
-
-for(int i=0;i<=a.length-1;i++) {
 	
-	System.out.println(a[i]);
-}
-
-System.out.println("print array in descending order");
-
-
-for(int i=a.length-1;i>=0;i--) {
 	
-	System.out.println(a[i]);
-}
-
-		
-		
-		
-		
-		
-		
+	
+	
 	}
 	
 }
