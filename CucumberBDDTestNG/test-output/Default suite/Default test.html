@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 03 19:25:02 IST 2022</td>
+<td>Started on:</td><td>Mon Jul 04 08:59:21 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28018 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32171 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,19 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.TestRunner.scenario()'><b>scenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guru99 login test scenario", "Optional[guru99 login feature]"</td>
-<td></td>
-<td>27</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at pages.LoginAddCustomerPage.EnterBillingAddress(LoginAddCustomerPage.java:91)
+	at stepDefinition.LoginStepDefinition.User_Enters_BillingAddress(LoginStepDefinition.java:157)
+	at ?.user enters billing address from given sheetname &quot;loginDetails&quot; and rownumber 0(file:///C:/Users/Jayesh.Kulkarni/eclipse-workspace/CucumberBDDTestNG/src/test/resources/features/Login.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1620253123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620253123'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at pages.LoginAddCustomerPage.EnterBillingAddress(LoginAddCustomerPage.java:91)
+	at stepDefinition.LoginStepDefinition.User_Enters_BillingAddress(LoginStepDefinition.java:157)
+	at ?.user enters billing address from given sheetname &quot;loginDetails&quot; and rownumber 0(file:///C:/Users/Jayesh.Kulkarni/eclipse-workspace/CucumberBDDTestNG/src/test/resources/features/Login.feature:16)
+</pre></div></td>
+<td>30</td>
 <td>runner.TestRunner@2f217633</td></tr>
 </table><p>
 </body>

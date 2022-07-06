@@ -2,25 +2,25 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
-public class LoginPage {
-
-	private WebDriver driver;
+public class AddCustomerPage {
+	
+	
+private WebDriver driver;
 	
 	private By UserID = By.xpath("//input[@name='uid']");
 	private By Password =  By.xpath("//input[@name='password']");
 	private By Loginbutton = By.xpath("//input[@type='submit']");
 	
 	
-	public LoginPage(WebDriver driver) {
+	public AddCustomerPage(WebDriver driver) {
 		this.driver=driver;
 	}
 	
 	
 	public String getPageTitle() {
 		return driver.getTitle();
+
 	}
 	
 	
@@ -53,15 +53,5 @@ public class LoginPage {
 	public String getHomePageTitle() {
 		return driver.getTitle();	
 		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

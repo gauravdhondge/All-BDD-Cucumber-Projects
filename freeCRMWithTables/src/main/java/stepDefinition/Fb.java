@@ -16,7 +16,7 @@ public class Fb {
 		
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\ChromeDriver\\chromedriver_win32 (1)\\chromedriver.exe");
+				"D:\\chrome\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver ();
 		
@@ -35,37 +35,75 @@ public class Fb {
 		String title =driver.getTitle();
 		System.out.println(title);
 		
+
+//--------select all the links present on the page----------------		
 		
-	List<WebElement>links =	driver.findElements(By.tagName("a"));
-	
-	for(WebElement e:links) {
-		
-		System.out.println(e.getText());
-	}
-		
-		
-//		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
-//		CreateNewAcc.click();
+
+//	List<WebElement> links =	driver.findElements(By.tagName("a"));
 //	
-//		Thread.sleep(2000);
+//	int a =links.size();
+//	System.out.println("no of links present on the page:"+a);
+//		
+//	for(WebElement e : links) {
+//		
+//		System.out.println(e.getText());
+//	}
+		
+		
+
+//-----------------------------------------------------------------------		
+	
+		
+		
+		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
+		CreateNewAcc.click();
+	
+		Thread.sleep(2000);
+		
+		
+		
+//--------for selecting the default or 1st option from drop down-------------------
+		
+//		WebElement allmonths = driver.findElement(By.xpath("//select[@id='month']"));
+//		
+//		Select s = new Select(allmonths);	
+//		
+//		String DefaultOption = s.getFirstSelectedOption().getText();
+//	System.out.println("the Default option is: "+DefaultOption);
+//	
+	
+	
+	
+//------selecting specific option from dropdown----------------------
+	
+//	List<WebElement> monthsdata = driver.findElements(By.tagName("select"));
+//	  int a = monthsdata.size();
+//	  System.out.println(a);
+	
+					
+		
+//----printing all the options from drop down-----------------------------	
 //		
 //		WebElement allmonths = driver.findElement(By.xpath("//select[@id='month']"));
 //		
 //		Select s = new Select(allmonths);
 //		
-//		List<WebElement> options = s.getOptions();
-//		
-//		for(WebElement e : options) {
-//			
-//			System.out.println(e.getText());
-//			
-//			
-//		}
-//		
-//		Thread.sleep(2000);
-//		
-//		driver.findElements(By.tagName(""));
+//		List<WebElement> months = s.getOptions();
+//	    for(WebElement e : months) {
+//	    	
+//	    	System.out.println(e.getText());
+//	    }
+	
+	
+	
 		
+		
+		
+	
+	
+	
+	
+//----------------------------------------------------------------------------		
 		
 		
 		

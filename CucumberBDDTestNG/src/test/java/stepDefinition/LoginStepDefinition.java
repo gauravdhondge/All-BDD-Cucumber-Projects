@@ -20,18 +20,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.AddCustomerPage;
-import pages.LoginPage;
+import pages.LoginAddCustomerPage;
 
 public class LoginStepDefinition {
 	
-	private LoginPage loginpage = new  LoginPage(DriverFactory.getDriver());
+	private LoginAddCustomerPage loginaddcustomer = new LoginAddCustomerPage(DriverFactory.getDriver());
 	private ConfigReader configreader = new ConfigReader();
 	private WebDriver driver;
 	private String PageTitle;
 	private String HomePageTitle;
-	private AddCustomerPage addcustomerpage = new AddCustomerPage(DriverFactory.getDriver());
-	
+	private String GetCustomerPageTitle;
 
 	@Given("^user is present on login page$")
 	public void user_is_present_on_login_page()
@@ -50,7 +48,7 @@ public class LoginStepDefinition {
 
 	{
 		
-	    PageTitle =  loginpage.getPageTitle();
+	    PageTitle =  loginaddcustomer.getPageTitle();
 		System.out.println("The Page title is displayed as "+ PageTitle);
 
 	}
@@ -67,7 +65,7 @@ public class LoginStepDefinition {
 	String userid = testdata.get(RowNumber).get("UserID");
 	String password = testdata.get(RowNumber).get("password");	
 		
-	loginpage.EnterUserID_and_Password(userid, password);	
+	loginaddcustomer.EnterUserID_and_Password(userid, password);	
 	
 	
 	}
@@ -79,7 +77,7 @@ public class LoginStepDefinition {
 
 	{
 		
-		loginpage.ClickLoginButton();
+		loginaddcustomer.ClickLoginButton();
 
 	}
  
@@ -89,7 +87,7 @@ public class LoginStepDefinition {
 
 	{
 
-		HomePageTitle = loginpage.getHomePageTitle();
+		HomePageTitle = loginaddcustomer.getHomePageTitle();
 		System.out.println("The HomePage title is displayed as "+ HomePageTitle);
 	
 	}
@@ -100,7 +98,7 @@ public class LoginStepDefinition {
 
 	{
 
-		addcustomerpage.ClickOnTelecomProject();
+		loginaddcustomer.ClickOnTelecomProject();
 		
 	}
 	
@@ -110,7 +108,7 @@ public class LoginStepDefinition {
 
 	{
 
-		addcustomerpage.ClickOnCloseButton();
+		loginaddcustomer.ClickOnCloseButton();
 		
 	}
 	
@@ -122,9 +120,46 @@ public class LoginStepDefinition {
 
 	{
 
-		addcustomerpage.ClickOnAddCustomerButton();
+		loginaddcustomer.ClickOnAddCustomerButton();
 		
 	}
+	
+	
+	@Then("^user is on add customer page$")
+	public void user_is_on_Add_CustomerPage() throws InterruptedException
+
+	{
+
+		GetCustomerPageTitle = loginaddcustomer.GetCustomerPageTitle();
+		System.out.println("The Customer Page title is displayed as"+ GetCustomerPageTitle);
+	
+	}
+	
+	
+	
+	
+	
+	@Then("user enters billing address from given sheetname {string} and rownumber {int}")
+	public void User_Enters_BillingAddress(String SheetName, Integer RowNumber) throws InterruptedException, InvalidFormatException, IOException
+
+	{
+
+		ExcelReader reader = new ExcelReader();
+		List<Map<String,String>> testdata =	reader.getData("D:\\projects\\LoginDetailsData.xlsx",SheetName);
+			
+		String FirstName = testdata.get(RowNumber).get("FirstName");
+		String LastName = testdata.get(RowNumber).get("LastName");	
+		String Email = testdata.get(RowNumber).get("Email");
+		String Address = testdata.get(RowNumber).get("Address");	
+		String mobileNumber = testdata.get(RowNumber).get("MobileNumber");	
+		
+			
+		loginaddcustomer.EnterBillingAddress(FirstName, LastName, Email, Address, mobileNumber);
+		
+	}
+	
+	
+	
 	
 	
 	

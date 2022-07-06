@@ -30,7 +30,7 @@ public class FaceBook {
 		
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\ChromeDriver\\chromedriver_win32 (1)\\chromedriver.exe");
+				"D:\\chrome\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver ();
 		

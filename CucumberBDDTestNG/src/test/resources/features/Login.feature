@@ -11,11 +11,13 @@ And user clicks on login button
 Then user is on home page
 Then user clicks on Telecom Project
 Then user clicks on close button
-Then user clicks on add customer button
+Then user clicks on add customer button 
+Then user is on add customer page 
+Then user enters billing address from given sheetname "<SheetName>" and rownumber <RowNumber>
 
 
 Examples:
 
-|SheetName   |RowNumber|
-|loginDetails|  0      |
+|SheetName     |RowNumber |SheetName     |RowNumber|
+|loginDetails  |  0       |BillingDetails| 0       |
 
