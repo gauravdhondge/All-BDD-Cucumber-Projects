@@ -5,22 +5,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class LoginAddCustomerPage {
-
+public class LoginAddTariffPlan {
+	
+	
 	private WebDriver driver;
 
 	private By UserID = By.xpath("//input[@name='uid']");
 	private By Password = By.xpath("//input[@name='password']");
 	private By Loginbutton = By.xpath("//input[@type='submit']");
 	private By TelecomProject = By.xpath("//a[text()='Telecom Project']");
-	private By AddCustomerButton = By.xpath("(//a[text()='Add Customer'])[1]");
-	private By Firstname = By.xpath("//input[@id='fname']");
-	private By Lastname = By.xpath("//input[@id='lname']");
-	private By Email = By.xpath("//input[@id='email']");
-	private By Address = By.xpath("//textarea[@id='message']");
-	private By MobileNumber = By.xpath("//input[@id='telephoneno']");
+	private By AddTariffPlanButton = By.xpath("//a[text()='Add Tariff Plan']");
+	private By MonthlyRental = By.xpath("//input[@id='rental1']");
+	private By FreeLocalMin = By.xpath("//input[@id='local_minutes']");
+	private By FreeInternationalMin = By.xpath("//input[@id='inter_minutes']");
+	private By FreeSMSPack = By.xpath("//input[@id='sms_pack']");
+	private By LocalPerMinCharges = By.xpath("//input[@id='minutes_charges']");
+	private By InternationalPerMinCharges = By.xpath("//input[@id='inter_charges']");
+	private By SMSPerCharges = By.xpath("//input[@id='sms_charges']");
+	
+	
 
-	public LoginAddCustomerPage(WebDriver driver) {
+	public LoginAddTariffPlan(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -70,11 +75,11 @@ public class LoginAddCustomerPage {
 
 	}
 
-	public void ClickOnAddCustomerButton() throws InterruptedException {
+	public void ClickOnAddTariffPlanButton() throws InterruptedException {
 
 		Thread.sleep(10000);
-		driver.findElement(AddCustomerButton).click();
-		System.out.println("Clicked on Add Customer Button");
+		driver.findElement(AddTariffPlanButton).click();
+		System.out.println("Clicked on Add TariffPlan  Button");
 
 	}
 
@@ -86,37 +91,36 @@ public class LoginAddCustomerPage {
 	}
 
 	
-	public void EnterBillingAddress(String firstname,String lastname,String email,String address,String mobilenumber ) throws InterruptedException {
-		
-		driver.findElement(Firstname).sendKeys(firstname);
-		System.out.println("Entered FirstName");
+	public void EnterTariffPlanDetails(String monthlyrental,String freelocalmin,String freeintrmin,String freesmspack,String localpermincharges,String intrpermincharges,String smspercharges) throws InterruptedException {
+	
+		driver.findElement(MonthlyRental).sendKeys(monthlyrental);
+		System.out.println("Entered Monthly Rental");
 		Thread.sleep(2000);
 		
-		driver.findElement(Lastname).sendKeys(lastname);
-		System.out.println("Entered LastName");
+		driver.findElement(FreeLocalMin).sendKeys(freelocalmin);
+		System.out.println("Entered Free Local Minutes");
 		Thread.sleep(2000);
 		
-		driver.findElement(Email).sendKeys(email);
-		System.out.println("Entered Email");
+		driver.findElement(FreeInternationalMin).sendKeys(freeintrmin);
+		System.out.println("Entered Free International Minutes");
 		Thread.sleep(2000);
 		
-		driver.findElement(Address).sendKeys(address);
-		System.out.println("Entered Address");
+		driver.findElement(FreeSMSPack).sendKeys(freesmspack);
+		System.out.println("Entered Free SMS Pack");
 		Thread.sleep(2000);
 		
-		driver.findElement(MobileNumber).sendKeys(mobilenumber);
-		System.out.println("Entered MobileNumber");
+		driver.findElement(LocalPerMinCharges).sendKeys(localpermincharges);
+		System.out.println("Entered Local Per Minute Charges");
 		Thread.sleep(2000);
 		
+		driver.findElement(InternationalPerMinCharges).sendKeys(intrpermincharges);
+		System.out.println("Entered International PerMinute Charges");
+		Thread.sleep(2000);
 		
+		driver.findElement(SMSPerCharges).sendKeys(smspercharges);
+		System.out.println("Entered SMS Per Charges");
+		Thread.sleep(2000);	
 		
 	}
 
-	
-	
-	
-	
-	
-	
-	
 }
