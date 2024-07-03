@@ -1,17 +1,13 @@
 package practice;
 
-public class B extends A {
-	
-public  void price() {
+public class Concrete extends Abstract {
+
+	@Override
+	void run() {
+		// TODO Auto-generated method stub
 		
-//		super.price();
-		System.out.println("thousand");
 	}
-
-
-
-
-
-
+	
+	
 
 }

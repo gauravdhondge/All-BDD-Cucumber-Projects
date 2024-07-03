@@ -1,44 +1,43 @@
 package oppsConcept;
 
-public class Imp implements Velo {
+public class Imp implements Int {
 
 	@Override
-	public void jayu() {
+	public void demon() {
 		
-		System.out.println("gaurav");
+		System.out.println("hi");
+		
+	}
+
+	@Override
+	public void demos() {
+		
+		System.out.println("by");
 		
 	}
 	
-	public void gau() {
+	 public  void delayed() {
+	
+		System.out.println("jay");
 		
-		System.out.println("hello HIIII");
 	}
 
 	public static void main(String[] args) {
 		
-		Imp i = new Imp();
-		i.jayu();
-		
-		System.out.println(Imp.a);
-		
-		i.gau();
-		
-		
-		int b = 20;
-		double c;
-		
-		c=b;
-		
-		System.out.println(c);
-		
-	double ab = 34.66677;
+	Imp x = new Imp();
+	x.delayed();
+	x.demon();
+	x.demos();
 	
-	
-	 int f = (int) ab;
-	
-		System.out.println(f);
+	System.out.println(x.a);
+		
+		
+		
 		
 		
 	}
-
+	
+	
+	
+	
 }

@@ -1,13 +1,17 @@
 package practice;
 
-public class JavaExample {
-	
+import java.util.Arrays;
+
+public class ProgramsPractice {
+
 	public static void main(String[] args) {
+
 		
-		B obj = new B();
-		obj.price();
+	
+		
+	
+		
 		
 		
 	}
-
 }
