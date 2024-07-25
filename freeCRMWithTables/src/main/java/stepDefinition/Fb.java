@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import junit.framework.Assert;
+
 public class Fb {
 
 	
@@ -16,24 +18,24 @@ public class Fb {
 		
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\chrome\\chromedriver_win32\\chromedriver.exe");
+				"D:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver ();
 		
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 		driver.manage().window().maximize();
 		
-		driver.get("https://www.facebook.com");
+		driver.get("https://www.google.com");
 		
 		Thread.sleep(2000);
 		
-		String url =driver.getCurrentUrl();
-		System.out.println(url);
-		
-		
-		String title =driver.getTitle();
-		System.out.println(title);
+//		String url =driver.getCurrentUrl();
+//		System.out.println(url);
+//		
+//		
+//		String title =driver.getTitle();
+//		System.out.println(title);
 		
 
 //--------select all the links present on the page----------------		
@@ -54,15 +56,23 @@ public class Fb {
 //-----------------------------------------------------------------------		
 	
 		
+//		
+//		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
+//		CreateNewAcc.click();
+//	
+//		Thread.sleep(2000);
 		
-		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
-		CreateNewAcc.click();
 	
-		Thread.sleep(2000);
+//		WebElement SignupText = driver.findElement(By.xpath("//div[text()='Sign Up']"));
+//	    String text =	SignupText.getText();
+//		System.out.println(text);
+//		
+//		Assert.assertEquals(text,"Sign Up");
 		
 		
 		
-//--------for selecting the default or 1st option from drop down-------------------
+		
+//--------for selecting the default option from drop down-------------------
 		
 //		WebElement allmonths = driver.findElement(By.xpath("//select[@id='month']"));
 //		
@@ -174,10 +184,9 @@ public class Fb {
 //	Thread.sleep(2000);
 	
 	
-	
-	
-	
-	
+//	WebElement firstname = driver.findElement(By.xpath("//input[@name='firstname']"));
+//	String a = firstname.getAttribute("name");
+//	System.out.println(a);
 	
 	
 	

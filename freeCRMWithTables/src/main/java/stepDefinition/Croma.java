@@ -8,14 +8,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.asserts.SoftAssert;
+
+import junit.framework.Assert;
 
 public class Croma {
 	
+
 	public static void main(String[] args) throws InterruptedException {
 		
 		
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\ChromeDriver\\chromedriver_win32 (1)\\chromedriver.exe");
+				"D:\\Chrome version 114\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver ();
 		
@@ -28,16 +32,14 @@ public class Croma {
 		Thread.sleep(3000);
 		
 		
-		WebElement SearchField = driver.findElement(By.xpath("//input[@id='search']"));
-		SearchField.sendKeys("TV");
-	
-		Thread.sleep(3000);
+		WebElement croma = driver.findElement(By.xpath("//img[@alt='Logo']"));
+		String text = croma.getText();
 		
 		
-		WebElement SearchButton = driver.findElement(By.xpath("//span[@class='icon']//*[1]"));
-		SearchButton.click();
 		
-		Thread.sleep(3000);
+		
+		SoftAssert soft = new SoftAssert();
+		soft.assertEquals(text, "croma");
 		
 		
 	List<WebElement> links =	driver.findElements(By.tagName("a"));
@@ -46,11 +48,7 @@ public class Croma {
 		
 		System.out.println(e.getText());
 	}
-//		
-//		WebElement SmartTV = driver.findElement(By.xpath("//span[@class='icon']//*[1]"));
-//		
-//		Actions act = new Actions(driver);
-//		act.moveToElement(SmartTV).click().build().perform();
+
 		
 	
 	

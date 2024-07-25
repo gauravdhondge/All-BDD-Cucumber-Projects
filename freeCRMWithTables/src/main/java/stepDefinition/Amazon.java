@@ -17,7 +17,7 @@ public class Amazon {
 		
 		
 		System.setProperty("webdriver.chrome.driver",
-		"D:\\ChromeDriver\\chromedriver_win32 (1)\\chromedriver.exe");
+				"D:\\Chrome version 114\\chromedriver_win32\\chromedriver.exe");
 		
 	
 		WebDriver driver = new ChromeDriver();
@@ -27,6 +27,10 @@ public class Amazon {
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
 		driver.get("https://www.amazon.in/");
+		
+		
+		
+		
 		
 		
 		

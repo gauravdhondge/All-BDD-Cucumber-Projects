@@ -30,7 +30,7 @@ public class FaceBook {
 		
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\chrome\\chromedriver_win32\\chromedriver.exe");
+				"D:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver ();
 		
@@ -38,11 +38,11 @@ public class FaceBook {
 		
 		driver.manage().window().maximize();
 		
-//		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert");
+		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_alert");
 		
 //		driver.get("https://www.w3schools.com/");
 		
-		driver.get("https://www.facebook.com");
+//		driver.get("https://www.facebook.com");
 		
 		Thread.sleep(3000);
 		
@@ -102,14 +102,14 @@ public class FaceBook {
 
 		
 		
-		String url = driver.getCurrentUrl();
-		System.out.println(url);
-		
-		
-		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
-		CreateNewAcc.click();
-	
-		Thread.sleep(3000);
+//		String url = driver.getCurrentUrl();
+//		System.out.println(url);
+//		
+//		
+//		WebElement CreateNewAcc = driver.findElement(By.xpath("(//a[@role='button'])[2]"));
+//		CreateNewAcc.click();
+//	
+//		Thread.sleep(3000);
 
 //		
 //		WebElement months = driver.findElement(By.xpath("//select[@id='month']"));
@@ -186,18 +186,18 @@ public class FaceBook {
 //	
 //	
 //		
-//		driver.switchTo().frame("iframeResult");
-//		
-//		Thread.sleep(3000);
-//		
-//		WebElement tryit = driver.findElement(By.xpath("//button[text()='Try it']"));
-//		tryit.click();
-//		
-//		
-//		Thread.sleep(3000);
-//		
-//	Alert alt =	driver.switchTo().alert();
-//	alt.accept();	
+		driver.switchTo().frame("iframeResult");
+		
+		Thread.sleep(3000);
+		
+		WebElement tryit = driver.findElement(By.xpath("//button[text()='Try it']"));
+		tryit.click();
+		
+		
+		Thread.sleep(3000);
+		
+	Alert alt =	driver.switchTo().alert();
+	alt.accept();	
 		
 	
 	
